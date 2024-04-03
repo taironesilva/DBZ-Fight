@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBZ - Fight</title>
+  <link rel="stylesheet" href="assets/css/luta.css" />
+</head>
+
+<body>
+
+  <body>
+    <div class="container">
+
+      <div class="fightarea">
+        <div class="hero">
+          <div class="lifebar">
+            <div class="bar"></div>
+          </div>
+          <strong id="heroTitle">Goku</strong>
+        </div>
+        <div class="evil">
+          <div class="lifebar">
+            <div class="bar"></div>
+          </div>
+          <strong id="evilTitle">Freeza</strong>
+        </div>
+      </div>
+
+      <div class="fighters">
+        <div id="gifhero">
+          <img src="assets/images/goku-normal.gif" id="herogif">
+        </div>
+        <div id="gifevil">
+          <img src="assets/images/freeza-normal.gif" id="evilgif">
+        </div>
+      </div>
+      <div class="botao">
+        <button class="atacar" onclick="atacar()">Realizar Ataque</button>
+        <div class="left-buttons">
+          <button class="revanche" style="display: none;" onClick="window.location.reload();">Revanche</button>
+          <a href="index.html">
+            <button class="voltar">Voltar</button>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <span class="log">
+      <ul>
+        <li></li>
+      </ul>
+    </span>
+
+    <script src="scripts/classes.js" defer></script>
+    <script src="scripts/luta.js" defer></script>
+
+  </body>
+
+</html>

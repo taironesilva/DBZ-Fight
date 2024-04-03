@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DBZ - Fight</title>
+  <link rel="stylesheet" href="assets/css/index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="image--char">
+      <div class="left--image">
+        <img src="assets/images/goku.jpg" id="leftImage" />
+      </div>
+      <div class="versus">
+        <p>X</p>
+      </div>
+      <div class="right--image">
+        <img src="assets/images/freeza.jpg" id="rightImage" />
+      </div>
+    </div>
+    <hr>
+
+
+    <form name="form" action="luta.html" method="get">
+      <div class="select--char">
+        <div class="heroForm">
+          <h1>Selecione um Héroi</h1>
+          <label for="goku">
+            <input type="radio" name="hero" id="goku" value="goku" checked>Goku</input>
+          </label>
+          <label for="vegeta">
+            <input type="radio" name="hero" id="vegeta" value="vegeta">Vegeta</input>
+          </label>
+        </div>
+
+        <div class="evilForm">
+          <h1>Selecione um Vilão</h1>
+          <label for="freeza">
+            <input type="radio" name="evil" id="freeza" value="freeza" checked>Freeza</input>
+          </label>
+          <label for="cell">
+            <input type="radio" name="evil" id="cell" value="cell">Cell</input>
+          </label>
+        </div>
+      </div>
+      <div class="botao">
+        <button type="submit">Ir para a luta</button>
+      </div>
+    </form>
+
+
+  </div>
+
+  <script src="scripts/classes.js" defer></script>
+  <script src="scripts/index.js" defer></script>
+
+</body>
+
+</html>

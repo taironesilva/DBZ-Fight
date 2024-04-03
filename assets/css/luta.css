@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Overlock SC', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  background-image: url(../images/bg_stage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.fightarea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  user-select: none;
+
+  strong {
+    color: black;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+      -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    user-select: none;
+  }
+}
+
+.lifebar {
+  width: 500px;
+  height: 10px;
+  border: 3px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+
+  .bar {
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+  }
+}
+
+.fighters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+  user-select: none;
+
+  img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    margin-bottom: 50px;
+    user-select: none;
+  }
+}
+
+.botao {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 50px;
+
+  button {
+    background-color: #e8af1e;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+      -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  }
+
+  .voltar {
+    background-color: red;
+    margin-left: 20px;
+  }
+  .left-buttons {
+    display: flex;
+    width: 30%;
+    align-items: right;
+    justify-content: right;
+  }
+
+  .revanche {
+    background-color: green;
+  }
+}
+
+.log {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px dotted gray;
+  height: 200px;
+  overflow-y: scroll;
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  align-items: top;
+  user-select: none;
+  color: red;
+}
