@@ -32,7 +32,7 @@ class Goku extends Character {
     super('Goku')
     this.life = 130
     this.attack = 50
-    this.defense = 60
+    this.defense = 50
     this.maxlife = this.life
     this.vivo = this.vivo
   }
@@ -41,9 +41,9 @@ class Goku extends Character {
 class Vegeta extends Character {
   constructor() {
     super('Vegeta')
-    this.life = 130
+    this.life = 120
     this.attack = 50
-    this.defense = 60
+    this.defense = 30
     this.maxlife = this.life
     this.vivo = this.vivo
   }
